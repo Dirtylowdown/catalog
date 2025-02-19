@@ -1,402 +1,81 @@
-configuration:
-  markdown_header_file: "config/header.md"
-  markdown_footer_file: "config/footer.md"
-  min_description_length: 0
-  max_description_length: 1000  # don't truncate descriptions
-  min_stars: 0
-  min_projectrank: 0
-  require_homepage: false
-  require_license: false
-  allowed_licenses: ["all"]
-  project_inactive_months: 12
-  project_dead_months: 99999  # "dead" is a somewhat strong assumption, so we avoid making it
+End
+Void
+Terminate
+Stop
+End 
 
-categories:
-- category: theming
-  title: 🎨 Theming
-- category: api-docs
-  title: 💻 API documentation building
-- category: blogging
-  title: 💬 Blogging
-- category: charts
-  title: 📊 Charts, Images, Tables & Graphs
-- category: code-exec-templating
-  title: 🤖 Code execution, variables & templating
-- category: git-info
-  title: 🌲 Git repos & info
-- category: html-css
-  title: 🌈 HTML processing & CSS styling
-- category: integrations
-  title: 📎 Integrations with other tools
-- category: i18n-l10n
-  title: 🌍 Internationalization & localization
-- category: links-refs
-  title: 🔗 Links & references
-- category: markdown
-  title: 🧩 Markdown extensions
-- category: nav-pages
-  title: 🧭 Navigation & page building
-- category: quality
-  title: ✅ Quality checks (code blocks, spelling, etc.)
-- category: search-toc
-  title: 🔍 Search & tables of content
-- category: site-conversion
-  title: 🍱 Site conversion (PDF/ePUB/etc.)
-- category: site-management
-  title: 🔧 Site building, site management
-- category: snippets-include
-  title: 📁 Snippets & includes (reusing contents)
 
-labels:
-- label: plugin
-  image: https://cdn.icon-icons.com/icons2/1465/PNG/32/701electricplug_100845.png
-  description: MkDocs plugin
-- label: theme
-  image: https://cdn.icon-icons.com/icons2/1495/PNG/32/preferencesdesktoptheme_102980.png
-  description: MkDocs theme
-- label: project
-  image: https://cdn.icon-icons.com/icons2/1448/PNG/32/42498factory_99134.png
-  description: Mkdocs-based project (website, templates, etc.)
-- label: markdown
-  image: https://cdn.icon-icons.com/icons2/1459/PNG/32/2799201-jigsaw-processing_99781.png
-  description: Markdown extension(s)
 
-projects:
-- name: Material for MkDocs
-  mkdocs_theme: material
-  mkdocs_plugin: [material/blog, material/group, material/offline, material/search, material/social, material/tags]
-  extra_dependencies:
-    plugins.social: mkdocs-material[imaging]
-  github_id: squidfunk/mkdocs-material
-  pypi_id: mkdocs-material
-  labels: [theme, plugin]
-  category: theming
-- name: Cinder
-  mkdocs_theme: cinder
-  github_id: chrissimpkins/cinder
-  pypi_id: mkdocs-cinder
-  license: MIT
-  labels: [theme]
-  category: theming
-- name: Windmill
-  mkdocs_theme: windmill
-  github_id: gristlabs/mkdocs-windmill
-  pypi_id: mkdocs-windmill
-  license: MIT
-  labels: [theme]
-  category: theming
-- name: Windmill Dark
-  mkdocs_theme: windmill-dark
-  github_id: noraj/mkdocs-windmill-dark
-  pypi_id: mkdocs-windmill-dark
-  labels: [theme]
-  category: theming
-- name: mkdocs-rtl
-  github_id: mberneti/mkdocs-rtl
-  labels: []
-  category: theming
-- name: docSkimmer
-  mkdocs_theme: docskimmer
-  github_id: hfagerlund/mkdocs-docskimmer
-  labels: [theme]
-  category: theming
-- name: mkdocs-theme-topdf
-  mkdocs_theme: topdf
-  github_id: kuri65536/mkdocs-theme-topdf
-  pypi_id: mkdocs-theme-topdf
-  labels: [theme]
-  category: theming
-- name: KPN for MkDocs
-  mkdocs_theme: kpn
-  github_id: kpn/mkdocs-kpn-theme
-  pypi_id: mkdocs-kpn
-  labels: [theme]
-  category: theming
-- name: CustomMill
-  mkdocs_theme: custommill
-  github_id: Siphalor/mkdocs-custommill
-  pypi_id: mkdocs-custommill
-  labels: [theme]
-  category: theming
-- name: Bootstrap 4
-  mkdocs_theme: bootstrap4
-  mkdocs_plugin: [bootstrap4-blockquotes, bootstrap4-tables]
-  shadowed: [mkdocs_theme]
-  github_id: LukeCarrier/mkdocs-theme-bootstrap4
-  pypi_id: mkdocs-theme-bootstrap4
-  labels: [theme]
-  category: theming
-- name: Nature
-  mkdocs_theme: nature
-  github_id: waylan/mkdocs-nature
-  pypi_id: mkdocs-nature
-  labels: [theme]
-  category: theming
-- name: GitHub
-  mkdocs_theme: github
-  github_id: g3xx/mkdocs-Github
-  pypi_id: mkdocs-github
-  labels: [theme]
-  category: theming
-- name: Bootswatch
-  mkdocs_theme: [cerulean, cosmo, cyborg, darkly, flatly, journal, litera, lumen, lux, materia, minty, pulse, sandstone, simplex, slate, solar, spacelab, superhero, united, yeti]
-  github_id: mkdocs/mkdocs-bootswatch
-  pypi_id: mkdocs-bootswatch
-  labels: [theme]
-  category: theming
-- name: Bootstrap
-  mkdocs_theme: bootstrap
-  github_id: mkdocs/mkdocs-bootstrap
-  pypi_id: mkdocs-bootstrap
-  labels: [theme]
-  category: theming
-- name: BOOTSTRAP386
-  mkdocs_theme: bootstrap386
-  gitlab_id: lramage/mkdocs-bootstrap386
-  pypi_id: mkdocs-bootstrap386
-  labels: [theme]
-  category: theming
-- name: GitBook
-  mkdocs_theme: gitbook
-  gitlab_id: lramage/mkdocs-gitbook-theme
-  pypi_id: mkdocs-gitbook
-  labels: [theme]
-  category: theming
-- name: Ivory
-  mkdocs_theme: ivory
-  github_id: daizutabi/mkdocs-ivory
-  pypi_id: mkdocs-ivory
-  labels: [theme]
-  category: theming
-- name: SWAN
-  mkdocs_theme: swan
-  github_id: swan-cern/mkdocs-swan
-  pypi_id: mkdocs-swan
-  labels: [theme]
-  category: theming
-- name: Zettelkasten
-  mkdocs_theme: zettelkasten-solarized-light
-  mkdocs_plugin: [zettelkasten]
-  github_id: buvis/mkdocs-zettelkasten
-  pypi_id: mkdocs-zettelkasten
-  labels: [theme]
-  category: theming
-- name: Cluster
-  mkdocs_theme: cluster
-  description: Another bootstrap theme for MkDocs
-  gitlab_id: kaliko/mkdocs-cluster
-  pypi_id: mkdocs-cluster
-  labels: [theme]
-  category: theming
-- name: Moonstone
-  mkdocs_theme: moonstone
-  github_id: byrnereese/mkdocs-moonstone
-  pypi_id: mkdocs-moonstone
-  labels: [theme]
-  category: theming
-- name: Alabaster
-  mkdocs_theme: alabaster
-  github_id: notpushkin/mkdocs-alabaster
-  pypi_id: mkdocs-alabaster
-  labels: [theme]
-  category: theming
-- name: Simple Blog
-  mkdocs_theme: simple-blog
-  github_id: FernandoCelmer/mkdocs-simple-blog
-  pypi_id: mkdocs-simple-blog
-  labels: [theme]
-  category: theming
-- name: Terminal for MkDocs
-  mkdocs_theme: terminal
-  mkdocs_plugin: [terminal/md-to-html]
-  github_id: ntno/mkdocs-terminal
-  pypi_id: mkdocs-terminal
-  labels: [theme]
-  category: theming
-- name: Dracula
-  mkdocs_theme: dracula
-  github_id: dracula/mkdocs
-  pypi_id: mkdocs-dracula-theme
-  labels: [theme]
-  category: theming
-- name: Risonia
-  mkdocs_theme: risonia
-  mkdocs_plugin: [risonia/color-theme, risonia/w3css-classes]
-  github_id: unverbuggt/mkdocs-risonia-theme
-  pypi_id: mkdocs-risonia-theme
-  labels: [theme]
-  category: theming
-- name: Lantana
-  mkdocs_theme: lantana
-  github_id: WSOFT-Project/lantana
-  pypi_id: lantana
-  labels: [theme]
-  category: theming
-- name: Torillic
-  mkdocs_theme: torillic
-  github_id: TEParsons/torillic
-  pypi_id: mkdocs-torillic
-  labels: [theme]
-  category: theming
-- name: Landing
-  mkdocs_theme: landing
-  github_id: TEParsons/mkdocs-landing
-  pypi_id: mkdocs-landing
-  labels: [theme]
-  category: theming
-- name: mkdocs-curriculum-vitae
-  mkdocs_theme: curriculum-vitae
-  github_id: Paul-Riviere/mkdocs-curriculum-vitae
-  pypi_id: mkdocs-curriculum-vitae
-  labels: [theme]
-  category: theming
 
-- name: automacdoc
-  github_id: AlexandreKempf/automacdoc
-  pypi_id: automacdoc
-  labels: []
-  category: api-docs
-- name: mkdocstrings
-  mkdocs_plugin: mkdocstrings
-  extra_dependencies:
-    plugins.mkdocstrings.handlers.crystal: mkdocstrings-crystal
-    plugins.mkdocstrings.handlers.python: mkdocstrings-python
-  github_id: mkdocstrings/mkdocstrings
-  pypi_id: mkdocstrings
-  labels: [plugin]
-  category: api-docs
-- name: MkAutoDoc
-  markdown_extension: mkautodoc
-  github_id: tomchristie/mkautodoc
-  pypi_id: mkautodoc
-  labels: [markdown]
-  license: BSD
-  category: api-docs
-- name: doxygen
-  mkdocs_plugin: doxygen
-  github_id: pieterdavid/mkdocs-doxygen-plugin
-  labels: [plugin]
-  category: api-docs
-- name: inari
-  mkdocs_plugin: inari
-  github_id: tkamenoko/inari
-  pypi_id: inari
-  labels: [plugin]
-  category: api-docs
-- name: mktheapidocs
-  mkdocs_plugin: mktheapidocs
-  github_id: greenape/mktheapidocs
-  pypi_id: mktheapidocs
-  labels: [plugin]
-  category: api-docs
-- name: MkApi
-  mkdocs_plugin: mkapi
-  github_id: daizutabi/mkapi
-  pypi_id: mkapi
-  labels: [plugin]
-  category: api-docs
-- name: mkdocs-yaarg-plugin
-  mkdocs_plugin: yaarg
-  github_id: g6123/mkdocs-yaarg-plugin
-  pypi_id: mkdocs-yaarg-plugin
-  labels: [plugin]
-  category: api-docs
-- name: mkdocs-click
-  markdown_extension: mkdocs-click
-  github_id: mkdocs/mkdocs-click
-  pypi_id: mkdocs-click
-  labels: [markdown]
-  category: api-docs
-- name: MkDocsOAD
-  mkdocs_plugin: [neoteroi.mkdocsoad, neoteroi.contribs]
-  markdown_extension: [neoteroi.cards, neoteroi.timeline, neoteroi.projects, neoteroi.spantable]
-  description: Plugin for MkDocs to generate human readable documentation from OpenAPI Documentation Version 3 (also known as Swagger documentation).
-  github_id: Neoteroi/mkdocs-plugins
-  pypi_id: neoteroi-mkdocs
-  labels: [plugin, markdown]
-  category: api-docs
-- name: mkdocs-typer
-  markdown_extension: mkdocs-typer
-  github_id: bruce-szalwinski/mkdocs-typer
-  pypi_id: mkdocs-typer
-  labels: [markdown]
-  category: api-docs
-- name: mkdoxy
-  mkdocs_plugin: mkdoxy
-  github_id: JakubAndrysek/MkDoxy
-  pypi_id: mkdoxy
-  labels: [plugin]
-  category: api-docs
-- name: mkdocs-typedoc
-  mkdocs_plugin: typedoc
-  github_id: JakubAndrysek/mkdocs-typedoc
-  pypi_id: mkdocs-typedoc
-  labels: [plugin]
-  category: api-docs
-- name: mkdocstrings-python
-  github_id: mkdocstrings/python
-  pypi_id: mkdocstrings-python
-  category: api-docs
-- name: mkdocstrings-crystal
-  github_id: mkdocstrings/crystal
-  pypi_id: mkdocstrings-crystal
-  category: api-docs
-- name: mkdocstrings-vba
-  github_id: mkdocstrings/vba
-  pypi_id: mkdocstrings-vba
-  category: api-docs
-- name: mkdocstrings-shell
-  github_id: mkdocstrings/shell
-  license: ISC
-  category: api-docs
-- name: mkdocs-pipeline-visualizer
-  mkdocs_plugin: pipeline-visualizer
-  github_id: obegron/mkdocs-pipeline-visualizer
-  pypi_id: mkdocs-pipeline-visualizer
-  category: api-docs
-  labels: [plugin]
-- name: mkdocs-material-adr
-  mkdocs_plugin: mkdocs-material-adr/adr
-  github_id: Kl0ven/mkdocs-material-adr
-  pypi_id: mkdocs-material-adr
-  labels: [plugin]
-  category: api-docs
-- name: mkdocs-autoapi
-  mkdocs_plugin: mkdocs-autoapi
-  github_id: jcayers20/mkdocs-autoapi
-  pypi_id: mkdocs-autoapi
-  category: api-docs
-  labels: [plugin]
-- name: mkdocs-api-autonav
-  mkdocs_plugin: api-autonav
-  github_id: tlambert03/mkdocs-api-autonav
-  pypi_id: mkdocs-api-autonav
-  category: api-docs
-  labels: [plugin]
 
-- name: blog
-  mkdocs_plugin: blog
-  github_id: andyoakley/mkdocs-blog
-  labels: [plugin]
-  category: blogging
-- name: Blogs for MkDocs
-  mkdocs_plugin: blog
-  github_id: fmaida/mkdocs-blog-plugin
-  pypi_id: mkdocs-blog-plugin
-  labels: [plugin]
-  category: blogging
-  shadowed: [mkdocs_plugin]
-- name: rss
-  mkdocs_plugin: rss
-  github_id: Guts/mkdocs-rss-plugin
-  pypi_id: mkdocs-rss-plugin
-  labels: [plugin]
-  category: blogging
-- name: newsletter
-  mkdocs_plugin: mkdocs-newsletter
-  github_id: lyz-code/mkdocs-newsletter
-  pypi_id: mkdocs-newsletter
-  labels: [plugin]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   category: blogging
 - name: mkdocs-blogging-plugin
   mkdocs_plugin: blogging
